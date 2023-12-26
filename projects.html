@@ -16,6 +16,20 @@
 <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Lato:wght@300&family=Open+Sans&family=Poppins:wght@300;400&family=Roboto:wght@300&family=Sevillana&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div id="myNav" class="overlay">
+
+    <!-- Button to close the overlay navigation -->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+    <!-- Overlay content -->
+    <div class="overlay-content">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      
+      <a href="contact.html">Contact</a>
+    </div>
+    
+  </div>
   <div id="nav">
     <div class="logo">LOGO</div>
     <div class="nav-elemets">
@@ -23,38 +37,40 @@
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
     </div>
+    <span class="ham" onclick="openNav()">&#9776;</span>
+    
 </div>
 
     <!---------------------infinte scroll-->
     <h1 class="text-center mb-5">Projects</h1>
     <div class="material"></div>
     <div class="owl-carousel owl-theme">
-        <div class="contin">
+        <div class="contin conatiner">
             <img src="img.jpg" alt="" srcset="" height="">
             <h1>Project Home</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <div class="contin">
+        <div class="contin conatiner">
             <img src="house.jpg" alt="" srcset="" height="">
             <h1>Project d-Home</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <div class="contin">
+        <div class="contin conatiner">
             <img src="house2.jpg" alt="" srcset="" height="">
             <h1>Project a-home</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <div class="contin">
+        <div class="contin conatiner">
             <img src="house4.jpg" alt="" srcset="" height="">
             <h1>Project b-home</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <div class="contin">
+        <div class="contin conatiner">
             <img src="mordern.jpg" alt="" srcset="" height="">
             <h1>Project c-home</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         </div>
-        <div class="contin">
+        <div class="contin conatiner">
             <img src="mordern1.jpg" alt="" srcset="" height="">
             <h1>Project f-home</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -168,7 +184,14 @@
              delay:0.3,
              duration:.1,
          })
+         function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
 
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
      
      </script>
      <script src="app.js"></script>

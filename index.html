@@ -17,6 +17,23 @@
 </head>
 <body>
     <!----------navbar-->
+    <div id="myNav" class="overlay">
+
+      <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    
+      <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        
+        <a href="contact.html">Contact</a>
+      </div>
+      
+    </div>
+    
+    <!-- Use any element to open/show the overlay navigation menu -->
+    
     <div id="nav">
         <div class="logo">LOGO</div>
         <div class="nav-elemets">
@@ -24,6 +41,8 @@
             <a href="projects.html">Projects</a>
             <a href="contact.html">Contact</a>
         </div>
+        <span class="ham" onclick="openNav()">&#9776;</span>
+    
     </div>
 
     <!--------------hero-->
@@ -41,10 +60,10 @@
         <img src="img.jpg" alt="">
         <img src="house2.jpg" alt="">
     </div>
-    <div id="about ">
+    <div id="about " class="text-center">
         <h3 id="content">-WHO ARE WE-</h3>
         <h1>ARCHITECTURE STUDIO</h1>
-        <P class="lead" id="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut excepturi dignissimos sit eum dolorum officia rerum aspernatur quam
+        <P class="lead container" id="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut excepturi dignissimos sit eum dolorum officia rerum aspernatur quam
             magni consequuntur sunt impedit, placeat fugit corrupti voluptates dicta perspiciatis veniam voluptatem?</P>
             <a href="contact.html" class="btn dd  btn-secondary mt-3">Read More</a>
     </div></div>
@@ -53,8 +72,8 @@
     <div id="cdr content" class="bg-dark">
         &nbsp;
     <div id="cards" style="text-align: start;margin-left: 5%;" class="mt-3 ">
-        <h1 class=" mt-5 text-white">WHY CHOOSE<span class="text-white"> US?</span></h1>
-        <h4 class="text-white">-WE PROVIDE OUR BEST SERVICE-</h4>
+        <h1 class=" mt-5 text-white text-center">WHY CHOOSE<span class="text-white"> US?</span></h1>
+        <h4 class="text-white text-center">-WE PROVIDE OUR BEST SERVICE-</h4>
     </div>
     <section class="p-5 text-center" id="card">
         <div class="conatiner">
@@ -63,8 +82,8 @@
                     <div class="card bg-dark cd1 text-white">
                         <div class="card-body text-center">
                             <div class="h1 mp-3"><i class="bi bi-globe"></i></div>
-                            <h3 class="card-title mb-3">Global Ranking</h3>
-                            <p class="card-text">
+                            <h3 class="card-title mb-3 crd-tt">Global Ranking</h3>
+                            <p class="card-text crd-pp">
                                 ARCHITECT STUDIO is ranked among the top ARCHITECT in the India, providing our customers with a world-class homes. We focus on building base of house </p>
                             <a href="contact.html" class="btn btn-dark">Read More</a>
                             
@@ -74,8 +93,8 @@
                 <div class="col-md"> <div class="card bg-dark cd1 text-white">
                     <div class="card-body text-center">
                         <div class="h1 mp-3"><i class="bi bi-people"></i></div>
-                        <h3 class="card-title mb-3">Experienced Staff</h3>
-                        <p class="card-text">
+                        <h3 class="card-title mb-3 crd-tt">Experienced Staff</h3>
+                        <p class="card-text crd-pp">
                             Our experienced staff is dedicated to providing you with the best possible designs,our staff is the best staff in the area and their designs and fields
                         </p>
                         <a href="contact.html" class="btn btn-dark">Read More</a>
@@ -85,8 +104,8 @@
                 <div class="col-md"> <div class="card bg-dark cd1 text-white">
                     <div class="card-body text-center">
                         <div class="h1 mp-3"><i class="bi bi-cash"></i></div>
-                        <h3 class="card-title mb-3">Affordable</h3>
-                        <p class="card-text">
+                        <h3 class="card-title mb-3 crd-tt">Affordable</h3>
+                        <p class="card-text crd-pp">
                             We belive on making the things which can be affordable to everyone and anyone can build thier dream house with or Affordable designs
                         </p>
                         <a href="contact.html" class="btn btn-dark">Read More</a>
@@ -96,8 +115,8 @@
                 <div class="col-md"> <div class="card bg-dark cd4 text-white">
                     <div class="card-body text-center">
                         <div class="h1 mp-3"><i class="bi bi-gem"></i></div>
-                        <h3 class="card-title mb-3">Quality</h3>
-                        <p class="card-text">
+                        <h3 class="card-title mb-3 crd-tt">Quality</h3>
+                        <p class="card-text crd-pp">
                             Our Quality meet the requirement of everyone which is really cost effient and really good looking for eyes,we belive that our qualiy will make us best ARCHITECT
                         </p>
                         <a href="contact.html" class="btn btn-dark">Read More</a>
@@ -154,9 +173,9 @@
         <div class="card">
           <img src="tst.jpg" alt="Person 1" class="card-img-top">
           <div class="card-body">
-            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            <p class="testimonial-text">ARCHITECT STudio is  the best ARCHITECT in the entire area they provide large number of hings for our company</p>
             <h5 class="card-title">John peter</h5>
-            <p class="card-text">CEO, Company Name</p>
+            <p class="card-text">CEO, Dahsing co</p>
           </div>
         </div>
       </div>
@@ -164,11 +183,11 @@
     <div class="testimonial-cards row">
       <div class="testimonial-card col-md-4">
         <div class="card">
-          <img src="tst2.jpg" alt="Person 1" class="card-img-top">
+          <img src="pfp1.jpg" alt="Person 1" class="card-img-top">
           <div class="card-body">
-            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            <p class="testimonial-text">ARCHITECT STudio is  the best ARCHITECT in the entire area they provide large number of hings for our company</p>
             <h5 class="card-title">John Doe</h5>
-            <p class="card-text">company Name</p>
+            <p class="card-text">Smashing co</p>
           </div>
         </div>
       </div>
@@ -176,11 +195,11 @@
     <div class="testimonial-cards row">
       <div class="testimonial-card col-md-4">
         <div class="card">
-          <img src="tst.jpg" alt="Person 1" class="card-img-top">
+          <img src="pfp3.jpg" alt="Person 1" class="card-img-top">
           <div class="card-body">
-            <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas faucibus mollis interdum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+            <p class="testimonial-text">ARCHITECT STudio is  the best ARCHITECT in the entire area they provide large number of hings for our company</p>
             <h5 class="card-title">Jean parker</h5>
-            <p class="card-text">Company Name</p>
+            <p class="card-text">Creative co</p>
           </div>
         </div>
       </div>
@@ -198,7 +217,7 @@
     </figure>
     </div></div>
     <div class="container" >
-      <img src="download.jpg" alt="">
+      <img class="imgptr" src="download.jpg" alt="">
     </div>
 
 
@@ -246,7 +265,7 @@
     
     
     
-    <img class="mt-5" src="https://images.squarespace-cdn.com/content/v1/52937c2ae4b00ad10e756a92/d76a27df-17c5-487e-a93a-f8d023362954/Meander_Tape_Web_Long+%281%29.png?format=1500w" alt="" srcset="">
+    <img class="mt-5 imgpp" src="https://images.squarespace-cdn.com/content/v1/52937c2ae4b00ad10e756a92/d76a27df-17c5-487e-a93a-f8d023362954/Meander_Tape_Web_Long+%281%29.png?format=1500w" alt="" srcset="">
 
 
       
@@ -329,6 +348,15 @@
              delay:0.3,
              duration:.1,
          })
+         /* Open when someone clicks on the span element */
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+/* Close when someone clicks on the "x" symbol inside the overlay */
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
 
 
      </script>
